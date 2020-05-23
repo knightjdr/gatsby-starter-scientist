@@ -1,0 +1,61 @@
+{
+  "name": "gatsby-starter-default",
+  "private": false,
+  "description": "A starter template for scientists",
+  "version": "0.1.0",
+  "author": "James Knight <knightjdr@gmail.com>",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "gatsby": "^2.21.37",
+    "gatsby-image": "^2.4.4",
+    "gatsby-plugin-manifest": "^2.4.5",
+    "gatsby-plugin-offline": "^3.2.3",
+    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-sharp": "^2.6.4",
+    "gatsby-plugin-sitemap": "^2.4.3",
+    "gatsby-plugin-styled-components": "^3.3.2",
+    "gatsby-plugin-use-dark-mode": "^1.1.2",
+    "gatsby-source-filesystem": "^2.3.4",
+    "gatsby-transformer-sharp": "^2.5.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "styled-components": "^5.1.0",
+    "typeface-quicksand": "^1.1.4",
+    "typeface-source-sans-pro": "^1.1.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public",
+    "develop": "npm run clean && gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knightjdr/gatsby-starter-scientist"
+  },
+  "bugs": {
+    "url": "https://github.com/knightjdr/gatsby-starter-scientist/issues"
+  }
+}

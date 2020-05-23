@@ -1,0 +1,23 @@
+.missing {
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--font-dark);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+}
+.missing * {
+  margin: 10px 0;
+}
+.missing h1 {
+  font-size: 4em;
+}
+.missing p {
+  text-align: center;
+}
+a.missing__link {
+  font-size: 1.5rem;
+}

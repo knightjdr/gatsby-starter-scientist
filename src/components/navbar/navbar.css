@@ -1,0 +1,131 @@
+.nav {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  font-family: var(--font-title);
+  font-weight: bold;
+  height: 60px;
+  padding: 0 10px 0 5px;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav__icon {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  text-decoration: none;
+}
+.nav__icon:focus svg .st0,
+.nav__icon:hover svg .st0 {
+  fill: var(--color-secondary);
+}
+.nav__icon:focus span,
+.nav__icon:hover span {
+  color: var(--color-secondary);
+}
+.nav__icon:focus,
+.nav__icon:hover {
+  text-decoration: none;
+}
+
+.nav__icon span,
+.nav__icon svg .st0 {
+  transition: all 0.3s ease;
+}
+.nav__icon span {
+  color: var(--color-font);
+}
+.nav__icon svg {
+  margin-right: 0.5rem;
+}
+.nav__icon svg .st0 {
+  fill: var(--color-primary);
+}
+.nav__icon svg .st1 {
+  fill:var(--color-accent);
+}
+
+.nav__menu {
+  display: none;
+  position: fixed;
+  right: -12rem;
+  top: 8px;
+  transition: transform 0.3s var(--timing-function);
+}
+.nav__menu_open {
+  transform: translateX(-12rem);
+}
+.nav__menu_closed {
+  transform: translateX(0);
+}
+.nav__menu-links {
+  background-color: var(--color-background);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 16px);
+  padding: 0.6rem;
+  width: 12rem;
+}
+.nav__menu button {
+  left: -5px;
+  position: relative;
+  top: 5px;
+}
+
+.nav__right {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav__menu,
+.nav__right {
+  color: var(--color-font);
+}
+
+.nav__menu a,
+.nav__right a {
+  font-family: var(--font-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav__menu a:link,
+.nav__menu a:visited,
+.nav__right a:link,
+.nav__right a:visited {
+  color: var(--color-font);
+}
+.nav__menu a:focus,
+.nav__menu a:hover,
+.nav__right a:focus,
+.nav__right a:hover {
+  color: var(--color-secondary);
+}
+
+.nav__menu-links a {
+  margin: 0.3rem 0;
+}
+.nav__menu-links button {
+  margin-left: auto;
+}
+
+.nav__right * {
+  margin: 0 0.6rem;
+}
+
+@media (max-width: 799px) {
+  .nav__menu {
+    display: flex;
+  }
+
+  .nav__right {
+    display: none;
+  }
+}
