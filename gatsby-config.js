@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    author: 'Diogene Teufelsdröckh',
+    author: 'Diogenes Teufelsdröckh',
     description: 'The laboratory website of Dr. Diogenes Teufelsdröckh, PhD.',
     siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
     title: 'Teufelsdröckh laboratory',
@@ -17,10 +17,10 @@ module.exports = {
         name: 'gatsby-starter-scientist',
         short_name: 'scientist',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#3d8183',
+        theme_color: '#3d8183',
         display: 'standalone',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/favicon.png',
       },
     },
     {

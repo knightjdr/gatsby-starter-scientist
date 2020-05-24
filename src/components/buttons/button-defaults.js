@@ -31,82 +31,18 @@ const Button = styled.button`
     }`
   )};
 
-  ${(props) => (props.kind === 'alert'
-    && css`& {
-      background-color: var(--alert2);
-      color: #421C1A;
-    }
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: #fff;
-      border-color: var(--alert2);
-    }`
-  )};
-
-  ${(props) => (props.kind === 'grey'
-    && css`& {
-      background-color: rgba(0, 0, 0, 0.2);
-      color: var(--color-font);
-    }
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: #fff;
-      border-color: rgba(0, 0, 0, 0.2);
-    }`
-  )};
-  
   ${(props) => (props.kind === 'primary'
     && css`& {
       background-color: var(--color-primary);
-      color: var(--color-font-dark);
-    }
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: #fff;
-      border-color: var(--color-secondary);
-      color: var(--color-secondary);
-    }`
-  )};
-
-${(props) => (props.kind === 'secondary'
-    && css`& {
-      background-color: var(--color-secondary);
-      color: var(--color-font-dark);
-    }
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: #fff;
-      border-color: var(--color-secondary);
-      color: var(--color-secondary);
-    }`
-  )};
-
-  ${(props) => (props.kind === 'success'
-    && css`& {
-      background-color: var(--success);
-      color: var(--color-font-contrast);
-    }
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: #fff;
-      border-color: var(--success);
-      color: var(--success);
-    }`
-  )};
-
-  ${(props) => (props.kind === 'warning'
-    && css`&{
-      background-color: var(--warning);
       color: var(--color-font-light);
     }
-
     &:focus:not([disabled]),
     &:hover:not([disabled]) {
       background-color: #fff;
-      border-color: var(--warning);
-      color: var(--warning);
+      border-color: var(--color-primary);
+      color: var(--color-primary);
     }`
-  )}
+  )};
 
   &:active {
     animation-duration: 0.3s;

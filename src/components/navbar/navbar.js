@@ -3,8 +3,9 @@ import React, { forwardRef } from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import ButtonIcon from '../buttons/icon/button';
+import Icon from './icon/icon-container';
 import Link from '../link/link';
-import Theme from './theme-container';
+import Theme from './theme/theme-container';
 
 import './navbar.css';
 
@@ -21,10 +22,12 @@ const Navbar = forwardRef((
   {
     handleClick,
     isMenuOpen,
+    location,
   },
   ref,
 ) => (
   <div className="nav">
+    <Icon location={location} />
     <div className={`nav__menu ${isMenuOpen ? 'nav__menu_open' : 'nav__menu_closed'}`}>
       <ButtonIcon
         ariaLabel="navigation menu"
@@ -53,6 +56,7 @@ const Navbar = forwardRef((
 Navbar.propTypes = {
   handleClick: PropTypes.func.isRequired,
   isMenuOpen: PropTypes.bool.isRequired,
+  location: PropTypes.shape({}).isRequired,
 };
 
 export default Navbar;

@@ -6,7 +6,7 @@ import Navbar from './navbar';
 import useClickOutside from '../../utils/hooks/click-outside/use-click-outside';
 
 const NavbarContainer = ({
-  pathName,
+  location,
 }) => {
   const [isMenuOpen, toggleMenu] = useState(false);
   const navRef = useRef();
@@ -27,18 +27,14 @@ const NavbarContainer = ({
     <Navbar
       handleClick={handleClick}
       isMenuOpen={isMenuOpen}
-      pathName={pathName}
+      location={location}
       ref={navRef}
     />
   );
 };
 
-NavbarContainer.defaultProps = {
-  pathName: '/',
-};
-
 NavbarContainer.propTypes = {
-  pathName: PropTypes.string,
+  location: PropTypes.shape({}).isRequired,
 };
 
 export default NavbarContainer;

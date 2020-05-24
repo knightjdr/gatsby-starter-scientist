@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-import ButtonIcon from '../buttons/icon/button';
+import ButtonIcon from '../../buttons/icon/button';
 
 const Theme = ({
   darkMode,

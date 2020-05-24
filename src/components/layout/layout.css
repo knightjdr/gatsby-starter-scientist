@@ -1,15 +1,8 @@
 html {
-  --alert: #FFFBE6;
-  --alert2: #ffe14d;
-  --color-accent: #fff1bc;
-  --color-primary: #7dc383;
-  --color-secondary: #699c78;
   --font-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   --font-secondary: 'Source Sans Pro', sans-serif;
   --font-title: 'Quicksand', sans-serif;
   --timing-function: cubic-bezier(.17, .67, .16, .99);
-  --success: #026E07;
-  --warning: #C2352A;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -17,24 +10,26 @@ body,
 body.light-mode {
   --color-background: #fff;
   --color-font: #333;
-  --color-font-contrast: #F2F2F2;
+  --color-font-contrast: #f2f2f2;
   --color-font-dark: #333;
-  --color-font-light: #F2F2F2;
+  --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);
-  --color-link: #346ACC;
-  --color-link-visited: #551A8B;
+  --color-link: #346acc;
+  --color-link-visited: #551a8b;
+  --color-primary: #3d8183;
   background-color: var(--color-background);
   color: var(--color-font);
 }
 body.dark-mode {
   --color-background: #252429;
-  --color-font: #F2F2F2;
+  --color-font: #f2f2f2;
   --color-font-contrast: #333;
   --color-font-dark: #333;
-  --color-font-light: #F2F2F2;
+  --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);
-  --color-link: #5B95FF;
-  --color-link-visited: #9675FF;
+  --color-link: #5b95ff;
+  --color-link-visited: #9675ff;
+  --color-primary: #ff7A8A;
   background-color: var(--color-background);
   color: var(--color-font);
 }

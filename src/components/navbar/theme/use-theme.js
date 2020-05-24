@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { getLocalStorage, setLocalStorage } from '../../utils/local-storage';
+import { getLocalStorage, setLocalStorage } from '../../../utils/local-storage';
 
 const useTheme = () => {
   const [darkMode, toggleState] = useState(false);
