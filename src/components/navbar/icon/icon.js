@@ -1,12 +1,12 @@
-import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
 import Link from '../../link/link';
+import Logo from '../../../images/logo.inline.svg';
+
+import './icon.css';
 
 const Icon = ({
-  image,
   isHomePage,
 }) => (
   <Link
@@ -14,17 +14,14 @@ const Icon = ({
     nav
     to="/"
   >
-    <Image
-      alt="Webiste logo"
-      fixed={image}
-      height={34}
-    />
+    <div className="nav__icon-svg-container">
+      <Logo />
+    </div>
     { !isHomePage && <span>Home</span> }
   </Link>
 );
 
 Icon.propTypes = {
-  image: PropTypes.shape({}).isRequired,
   isHomePage: PropTypes.bool.isRequired,
 };
 

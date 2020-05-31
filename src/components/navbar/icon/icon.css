@@ -1,0 +1,51 @@
+.nav__icon {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  text-decoration: none;
+}
+.nav__icon:focus,
+.nav__icon:hover {
+  text-decoration: none;
+}
+
+.nav__icon-svg-container {
+  align-items: center;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  transition: all 0.3s var(--timing-function);
+}
+
+.nav__icon svg {
+  fill: var(--color-background);
+  height: 25px;
+  transition: fill 0.3s var(--timing-function);
+}
+
+.nav__icon span {
+  color: var(--color-font);
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: all 0.3s var(--timing-function);
+}
+
+.nav__icon:focus .nav__icon-svg-container,
+.nav__icon:hover .nav__icon-svg-container {
+  background-color: var(--color-background);
+  border-color: var(--color-primary);
+}
+.nav__icon:focus svg,
+.nav__icon:hover svg {
+  fill: var(--color-primary);
+}
+.nav__icon:focus span,
+.nav__icon:hover span {
+  color: var(--color-primary);
+}

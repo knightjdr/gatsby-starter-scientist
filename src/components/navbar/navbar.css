@@ -5,34 +5,11 @@
   font-family: var(--font-title);
   font-weight: bold;
   height: 60px;
-  padding: 0 10px 0 5px;
+  padding: 0 10px;
   text-transform: uppercase;
   top: 0;
   width: 100%;
   z-index: 100;
-}
-
-.nav__icon {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  padding: 0 5px;
-  text-decoration: none;
-}
-.nav__icon:focus span,
-.nav__icon:hover span {
-  color: var(--color-primary);
-}
-.nav__icon:focus,
-.nav__icon:hover {
-  text-decoration: none;
-}
-
-.nav__icon span {
-  color: var(--color-font);
-  display: inline-block;
-  margin-left: 0.5rem;
-  transition: all 0.3s var(--timing-function);
 }
 
 .nav__menu {
