@@ -34,7 +34,7 @@ const Button = styled.button`
   ${(props) => (props.kind === 'primary'
     && css`& {
       background-color: var(--color-primary);
-      color: var(--color-font-light);
+      color: var(--color-background);
     }
     &:focus:not([disabled]),
     &:hover:not([disabled]) {

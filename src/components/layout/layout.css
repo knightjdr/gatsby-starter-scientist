@@ -10,7 +10,7 @@ body,
 body.light-mode {
   --color-background: #fff;
   --color-font: #333;
-  --color-font-contrast: #f2f2f2;
+  --color-font-contrast: #110202;
   --color-font-dark: #333;
   --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);
@@ -23,7 +23,7 @@ body.light-mode {
 body.dark-mode {
   --color-background: #252429;
   --color-font: #f2f2f2;
-  --color-font-contrast: #333;
+  --color-font-contrast: #110202;
   --color-font-dark: #333;
   --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);

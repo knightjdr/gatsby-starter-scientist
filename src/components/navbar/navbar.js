@@ -11,10 +11,7 @@ import './navbar.css';
 
 const SharedLinks = () => (
   <>
-    <Link to="/search">Search</Link>
-    <Link to="/downloads">Downloads</Link>
-    <Link to="/resources">Resources</Link>
-    <Link to="/about">About</Link>
+    <Link to="/publications">Publications</Link>
   </>
 );
 

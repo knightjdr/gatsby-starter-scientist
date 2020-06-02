@@ -1,0 +1,42 @@
+.home__landing {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.home__landing > div {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  max-width: 960px;
+  min-height: 450px;
+  padding: 3rem 1.5rem;
+  width: 100%;
+}
+.home__landing h1,
+.home__landing-description {
+  color: var(--color-font-light)
+}
+.home__landing-description {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.home__landing-links {
+  display: flex;
+  margin: 0 -0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.home__landing-links > * {
+  margin: 0.5rem;
+}
+
+@media (max-height: 500px) {
+  .home__landing > div {
+    height: auto;
+    min-height: auto;
+  }
+}

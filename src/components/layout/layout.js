@@ -39,6 +39,7 @@ const Layout = ({
               ©
               {' '}
               {author}
+              ,
               {' '}
               {new Date().getFullYear()}
               .
