@@ -30,7 +30,7 @@ a.link_button {
   align-items: center;
   background-color: var(--color-primary);
   border: 2px solid var(--color-primary);
-  border-radius: 0.2rem;
+  border-radius: 2rem;
   box-sizing: border-box;
   color: var(--color-font-contrast);
   display: flex;
