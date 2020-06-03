@@ -15,15 +15,9 @@
 .nav__menu {
   display: none;
   position: fixed;
-  right: -12rem;
+  left: calc(100% - 34px);
   top: 8px;
   transition: transform 0.3s var(--timing-function);
-}
-.nav__menu_open {
-  transform: translateX(-12rem);
-}
-.nav__menu_closed {
-  transform: translateX(0);
 }
 .nav__menu-links {
   background-color: var(--color-background);
@@ -34,7 +28,6 @@
   flex-direction: column;
   height: calc(100vh - 16px);
   padding: 0.6rem;
-  width: 12rem;
 }
 .nav__menu button {
   left: -5px;

@@ -18,14 +18,17 @@ const SharedLinks = () => (
 const Navbar = forwardRef((
   {
     handleClick,
-    isMenuOpen,
     location,
+    transform,
   },
   ref,
 ) => (
   <div className="nav">
     <Icon location={location} />
-    <div className={`nav__menu ${isMenuOpen ? 'nav__menu_open' : 'nav__menu_closed'}`}>
+    <div
+      className="nav__menu"
+      style={{ transform }}
+    >
       <ButtonIcon
         ariaLabel="navigation menu"
         icon={faBars}
@@ -52,8 +55,8 @@ const Navbar = forwardRef((
 
 Navbar.propTypes = {
   handleClick: PropTypes.func.isRequired,
-  isMenuOpen: PropTypes.bool.isRequired,
   location: PropTypes.shape({}).isRequired,
+  transform: PropTypes.string.isRequired,
 };
 
 export default Navbar;

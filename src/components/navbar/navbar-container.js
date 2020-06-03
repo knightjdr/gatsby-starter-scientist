@@ -3,32 +3,33 @@ import React, { useRef, useState } from 'react';
 
 import Navbar from './navbar';
 
+import getMenuState from './get-menu-state';
 import useClickOutside from '../../utils/hooks/click-outside/use-click-outside';
 
 const NavbarContainer = ({
   location,
 }) => {
-  const [isMenuOpen, toggleMenu] = useState(false);
+  const [menuState, toggleMenu] = useState(getMenuState());
   const navRef = useRef();
 
   const closeMenu = () => {
-    if (isMenuOpen) {
-      toggleMenu(false);
+    if (menuState.isOpen) {
+      toggleMenu(getMenuState(menuState, navRef));
     }
   };
 
   useClickOutside(navRef, closeMenu);
 
   const handleClick = () => {
-    toggleMenu(!isMenuOpen);
+    toggleMenu(getMenuState(menuState, navRef));
   };
 
   return (
     <Navbar
       handleClick={handleClick}
-      isMenuOpen={isMenuOpen}
       location={location}
       ref={navRef}
+      transform={menuState.transform}
     />
   );
 };
