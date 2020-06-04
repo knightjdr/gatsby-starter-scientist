@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-styled-components',
+    'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -36,6 +37,13 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'markdown',
+        path: `${__dirname}/src/markdown`,
       },
     },
     {

@@ -15,7 +15,8 @@ The example scientist used in this starter is a fictional character from Thomas 
 
 The background image on the homepage can be changed by replacing the image `src/images/hero.png`.
 Make sure the image is large to ensure it will look good on large 4K monitors. The image
-in this starter is 5184 × 3456 pixels.
+in this starter is 5184 × 3456 pixels. The image has to be a `png`, so convert from other formats
+if needed.
 
 Attribution: the photo is courtesy of [Ramón Salinero on Unsplash](https://unsplash.com/photos/vEE00Hx5d0Q).
 
@@ -25,8 +26,8 @@ The favourite icon (favicon) is used in a few places. Most notably it is the sma
 in the browser tab and located next to the website title on bookmarks.
 
 It can be changed by replacing the image `src/images/favicon.png`. It should be a square image
-512x512px. To be consistent with the style of the current icon, create a background circle with
-the hex colour `#ffffff` and give the foreground image the colour `#3d8183`.
+512x512px in `png` format. To be consistent with the style of the current icon, create a background
+circle with the hex colour `#ffffff` and give the foreground image the colour `#3d8183`.
 
 ### logo
 

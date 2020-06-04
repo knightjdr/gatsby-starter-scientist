@@ -49,6 +49,7 @@ a.link_button:focus,
 a.link_button:active {
   background-color: var(--color-background);
   border-color: var(--color-primary);
+  color: var(--color-font);
   text-decoration: none;
 }
 a.link_button.link_nav:visited {

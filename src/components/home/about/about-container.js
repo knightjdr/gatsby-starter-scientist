@@ -7,10 +7,15 @@ const AboutContainer = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        portrait: file(relativePath: { eq: "portrait.png" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 350) {
-              ...GatsbyImageSharpFluid_withWebp
+        markdown: markdownRemark(fileAbsolutePath: { regex: "/about.md/" }) {
+          html
+          frontmatter {
+            portrait {
+              childImageSharp {
+                fluid(quality: 90, maxWidth: 350) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
             }
           }
         }
@@ -26,7 +31,8 @@ const AboutContainer = () => {
   return (
     <About
       author={query.site.siteMetadata.author}
-      image={query.portrait.childImageSharp.fluid}
+      html={query.markdown.html}
+      image={query.markdown.frontmatter.portrait.childImageSharp.fluid}
     />
   );
 };
