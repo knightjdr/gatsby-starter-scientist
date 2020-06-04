@@ -1,0 +1,15 @@
+.about h2 {
+  font-family: var(--font-title);
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.about__portrait {
+  border-radius: 50%;
+  float: left;
+  height: 350px;
+  margin-right: 3rem;
+  shape-outside: circle();
+  width: 350px;
+}

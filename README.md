@@ -7,9 +7,13 @@ The example scientist used in this starter is a fictional character from Thomas 
 
 ## Customization
 
+### gatsby-config.js
+
+
+
 ### background image
 
-The background image on the homepage can be changed by replacing the image `src/images/hero.jpg`.
+The background image on the homepage can be changed by replacing the image `src/images/hero.png`.
 Make sure the image is large to ensure it will look good on large 4K monitors. The image
 in this starter is 5184 × 3456 pixels.
 
