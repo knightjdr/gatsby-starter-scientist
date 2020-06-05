@@ -1,6 +1,6 @@
 import sortMarkdown from './sort-markdown';
 
-describe('Name of the group', () => {
+describe('Sort markdown', () => {
   it('should not sort markdown array when no fields supplied', () => {
     const fields = [];
     const markdown = [

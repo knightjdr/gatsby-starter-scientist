@@ -19,6 +19,19 @@
   top: 8px;
   transition: transform 0.3s var(--timing-function);
 }
+.nav__menu a {
+  align-items: center;
+  display: flex;
+}
+.nav__menu a svg {
+  margin-right: 0.5rem;
+}
+.nav__menu button {
+  left: -5px;
+  position: relative;
+  top: 5px;
+}
+
 .nav__menu-links {
   background-color: var(--color-background);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -28,11 +41,6 @@
   flex-direction: column;
   height: calc(100vh - 16px);
   padding: 0.6rem;
-}
-.nav__menu button {
-  left: -5px;
-  position: relative;
-  top: 5px;
 }
 
 .nav__right {

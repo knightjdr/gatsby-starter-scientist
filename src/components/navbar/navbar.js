@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faBook } from '@fortawesome/free-solid-svg-icons';
 
 import ButtonIcon from '../buttons/icon/button';
 import Icon from './icon/icon-container';
@@ -11,7 +12,10 @@ import './navbar.css';
 
 const SharedLinks = () => (
   <>
-    <Link to="/publications">Publications</Link>
+    <Link to="/publications">
+      <FontAwesomeIcon icon={faBook} />
+      Publications
+    </Link>
   </>
 );
 
