@@ -34,7 +34,9 @@ const ResearchContainer = () => {
   const markdown = sortMarkdown(query.markdown.edges, ['order', 'title']);
 
   return (
-    <Research markdown={markdown} />
+    markdown.length > 0
+      ? <Research markdown={markdown} />
+      : null
   );
 };
 
