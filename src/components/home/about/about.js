@@ -17,7 +17,7 @@ const About = ({
       {' '}
       {author}
     </h2>
-    <div>
+    <div className="about__inner">
       <Image
         alt={`Portrait of ${author}`}
         className="about__portrait"

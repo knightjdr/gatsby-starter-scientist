@@ -1,0 +1,35 @@
+.research h2 svg {
+  color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+.research__list {
+  list-style: none;
+  margin: 0;
+  margin-top: 3rem;
+}
+.research__list li {
+  display: flow-root;
+}
+.research__list li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.research__list li:nth-child(even) .research__list-image {
+  float: right;
+  margin-left: 1.5rem;
+}
+.research__list li:nth-child(odd) .research__list-image {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.research__list-content {
+  min-height: 100%;
+}
+.research__list-image {
+  border-radius: 0.2rem;
+  height: 300px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  min-width: 300px;
+}

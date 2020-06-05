@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     author: 'Diogenes Teufelsdröckh',
-    description: 'Transcendentalist musings on the origin of clothing',
+    description: 'Transcendentalist musings on the future of robots',
     siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
     title: 'Teufelsdröckh laboratory',
   },

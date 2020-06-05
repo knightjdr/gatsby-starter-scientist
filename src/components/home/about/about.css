@@ -14,3 +14,21 @@
   shape-outside: circle();
   width: 350px;
 }
+
+@media (max-width: 700px) {
+  .about__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__portrait {
+    float: unset;
+    height: auto;
+    margin-right: 0;
+    max-height: 350px;
+    max-width: 350px;
+    shape-outside: none;
+    width: 100%;
+  }
+}
