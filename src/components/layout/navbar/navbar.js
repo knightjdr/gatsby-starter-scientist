@@ -3,9 +3,9 @@ import React, { forwardRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faBook } from '@fortawesome/free-solid-svg-icons';
 
-import ButtonIcon from '../buttons/icon/button';
+import ButtonIcon from '../../buttons/icon/button';
 import Icon from './icon/icon-container';
-import Link from '../link/link';
+import Link from '../../link/link';
 import Theme from './theme/theme-container';
 
 import './navbar.css';

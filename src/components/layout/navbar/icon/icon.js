@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Link from '../../link/link';
-import Logo from '../../../images/logo.inline.svg';
+import Link from '../../../link/link';
+import Logo from '../../../../images/logo.inline.svg';
 
 import './icon.css';
 

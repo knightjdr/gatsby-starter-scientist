@@ -4,6 +4,16 @@ module.exports = {
     description: 'Transcendentalist musings on the future of robots',
     siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
     title: 'Teufelsdröckh laboratory',
+    // An array of links to display in the page footer. Include as many as you like
+    // (not just the ones here). If either the link or text is missing,
+    // it will not be shown. Delete all array items, except for the 'Dummy',
+    // to disable footer links.
+    links: [
+      { text: 'GitHub', link: 'https://github.com/knightjdr' },
+      { text: 'Google Scholar', link: 'https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ' },
+      { text: 'LinkedIn', link: 'https://www.linkedin.com/in/james-knight-174996156' },
+      { text: 'Dummy', link: '' }, // Do not remove.
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',

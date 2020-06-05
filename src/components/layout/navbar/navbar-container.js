@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 import Navbar from './navbar';
 
 import getMenuState from './get-menu-state';
-import useClickOutside from '../../utils/hooks/click-outside/use-click-outside';
+import useClickOutside from '../../../utils/hooks/click-outside/use-click-outside';
 
 const NavbarContainer = ({
   location,

@@ -20,6 +20,8 @@ if needed.
 
 ### research section
 
+### footer
+
 ### favicon
 
 The favourite icon (favicon) is used in a few places. Most notably it is the small icon present

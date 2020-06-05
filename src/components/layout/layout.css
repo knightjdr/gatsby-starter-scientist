@@ -657,18 +657,6 @@ pre tt:after {
   max-width: 960px;
   padding: 0.5rem 1rem;
 }
-.layout > footer {
-  align-items: center;
-  display: flex;
-  font-family: var(--font-secondary);
-  height: 60px;
-  justify-content: center;
-  padding: 1rem 1rem;
-  width: 100%;
-}
-.layout > footer a {
-  margin-left: 0.2rem;
-}
 
 .noscript-warning {
   background-color: var(--alert2);
