@@ -16,9 +16,13 @@ Make sure the image is large to ensure it will look good on large 4K monitors. T
 in this starter is 5184 × 3456 pixels. The image has to be a `png`, so convert from other formats
 if needed.
 
-### about section
+### About section
 
-### research section
+### Research section
+
+### Opportunities section
+
+### Contact section
 
 ### footer
 
@@ -56,4 +60,9 @@ body.dark-mode {
 
 ## Credits
 
+Vector cartoons are by [Lukasz Adam](https://lukaszadam.com/)
+Icons are from the free repository at [FontAwesome](https://fontawesome.com/)
 Hero image is courtesy of [Ramón Salinero on Unsplash](https://unsplash.com/photos/vEE00Hx5d0Q).
+Wooden robot image is courtesy of [Kaboompics.com from Pexels](https://www.pexels.com/photo/wooden-robot-6069/)
+Sky image is courtesy of [Fey Marin on Unsplash](https://unsplash.com/photos/UFp0Y3qfFWM)
+Robot army image is courtesy of [Mina FC on Unsplash](https://unsplash.com/photos/3QKsG0fDrC8)
