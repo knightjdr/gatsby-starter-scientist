@@ -2,11 +2,16 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
 }
 
 .home__inner > section {
   max-width: 960px;
   padding: 6rem 0 2rem 0;
+  width: 100%;
+}
+
+.home__layout {
+  display: flex;
+  padding-bottom: 2rem;
   width: 100%;
 }

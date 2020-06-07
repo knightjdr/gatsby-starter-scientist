@@ -41,7 +41,6 @@
   background-color: var(--color-primary);
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
   padding: 1rem;
   width: 100%;
 }

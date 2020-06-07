@@ -1,0 +1,25 @@
+.gutter {
+  background-color: var(--color-primary);
+  box-sizing: border-box;
+  flex-grow: 1;
+  mask-repeat: repeat-y;
+  min-width: 1rem;
+}
+
+.gutter_left {
+  margin-right: 1rem;
+  mask-image: url('./gutter-left.svg');
+  mask-position: -20px 0;
+}
+
+.gutter_right {
+  margin-left: 1rem;
+  mask-image: url('./gutter-right.svg');
+  mask-position: right 100px;
+}
+
+@media (max-width: 1500px) {
+  .gutter {
+    mask-image: none;
+  }
+}
