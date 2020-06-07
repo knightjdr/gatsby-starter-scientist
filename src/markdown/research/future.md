@@ -1,5 +1,5 @@
 ---
-title: The Future
+title: Inevitability and Uncertainty
 image: ../../images/research/future.png
 order: 2
 ---

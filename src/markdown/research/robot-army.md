@@ -1,5 +1,5 @@
 ---
-title: Robot Army
+title: Self-aware robot armies
 image: ../../images/research/robot-army.png
 order: 3
 ---
