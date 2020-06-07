@@ -2,6 +2,7 @@ import React from 'react';
 
 import About from './about/about-container';
 import Landing from './landing/landing-container';
+import Opportunities from './opportunities/opportunities-container';
 import Research from './research/research-container';
 import { GutterLeft, GutterRight } from './gutter/gutter';
 
@@ -15,6 +16,7 @@ const Home = () => (
       <div className="home__inner">
         <About />
         <Research />
+        <Opportunities />
       </div>
       <GutterRight />
     </div>
