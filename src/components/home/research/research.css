@@ -27,9 +27,33 @@
   min-height: 100%;
 }
 .research__list-image {
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   height: 300px;
   margin-top: 0.3rem;
   margin-bottom: 0.5rem;
-  min-width: 300px;
+  width: 300px;
+}
+
+@media (max-width: 600px) {
+  .research__list li {
+    display: block;
+  }
+  .research__list > li > div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .research__list-image {
+    margin-bottom: 1rem;
+    max-width: 300px;
+    width: 100%;
+  }
+  .research__list li:nth-child(even) .research__list-image {
+    float: none;
+    margin-left: 0;
+  }
+  .research__list li:nth-child(odd) .research__list-image {
+    float: none;
+    margin-right: 0
+  }
 }
