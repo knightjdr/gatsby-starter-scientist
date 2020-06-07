@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faUserFriends } from '@fortawesome/free-solid-svg-icons';
 
 import './opportunities.css';
 
@@ -13,7 +13,7 @@ const Opportunities = ({
 }) => (
   <section className="opportunities">
     <h2>
-      <FontAwesomeIcon icon={faSearch} />
+      <FontAwesomeIcon icon={faUserFriends} />
       Opportunities
     </h2>
     <div dangerouslySetInnerHTML={{ __html: html }} />
