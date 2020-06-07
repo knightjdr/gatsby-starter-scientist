@@ -1,6 +1,7 @@
 import React from 'react';
 
 import About from './about/about-container';
+import Contact from './contact/contact-container';
 import Landing from './landing/landing-container';
 import Opportunities from './opportunities/opportunities-container';
 import Research from './research/research-container';
@@ -17,6 +18,7 @@ const Home = () => (
         <About />
         <Research />
         <Opportunities />
+        <Contact />
       </div>
       <GutterRight />
     </div>
