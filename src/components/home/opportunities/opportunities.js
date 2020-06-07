@@ -11,7 +11,10 @@ import './opportunities.css';
 const Opportunities = ({
   html,
 }) => (
-  <section className="opportunities">
+  <section
+    className="opportunities"
+    id="opportunities"
+  >
     <h2>
       <FontAwesomeIcon icon={faUserFriends} />
       Opportunities

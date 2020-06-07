@@ -15,7 +15,10 @@ const OpportunitiesContainer = () => {
   );
 
   return (
-    <Opportunities html={query.markdown.html} />
+    query.markdown === null
+    || query.markdown.html === ''
+      ? null
+      : <Opportunities html={query.markdown.html} />
   );
 };
 

@@ -15,7 +15,10 @@ const ContactContainer = () => {
   );
 
   return (
-    <Contact html={query.markdown.html} />
+    query.markdown === null
+    || query.markdown.html === ''
+      ? null
+      : <Contact html={query.markdown.html} />
   );
 };
 

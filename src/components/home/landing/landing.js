@@ -34,7 +34,7 @@ const Landing = ({
         <Link
           buttonStyle
           nav
-          to="/opportunities"
+          to="#opportunities"
         >
           Opportunities
         </Link>
