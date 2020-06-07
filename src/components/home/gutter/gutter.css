@@ -20,6 +20,7 @@
 
 @media (max-width: 1500px) {
   .gutter {
+    background-color: transparent;
     mask-image: none;
   }
 }
