@@ -13,7 +13,7 @@ const useLinks = () => {
             }
           }
         }
-        publications(list: {elemMatch: {title: {regex: "/^(?!(dummy)$).*$/"}}}) {
+      publications(list: {elemMatch: {title: {regex: "/.*/"}}}) {
           list{
             title
           }

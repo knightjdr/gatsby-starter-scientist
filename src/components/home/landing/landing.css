@@ -29,6 +29,9 @@
   margin: 0 -0.5rem;
   margin-top: 2rem;
 }
+.home__landing-links a {
+  text-transform: capitalize;
+}
 .home__landing-links > * {
   margin: 0.5rem;
 }

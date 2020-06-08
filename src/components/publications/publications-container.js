@@ -9,7 +9,7 @@ const PublicationsContainer = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        publications(list: {elemMatch: {title: {regex: "/^(?!(dummy)$).*$/"}}}) {
+        publications(list: {elemMatch: {title: {regex: "/.*/"}}}) {
           list{
             authors
             journal

@@ -1,12 +1,19 @@
 module.exports = {
+  pathPrefix: '/gatsby-starter-scientist',
   siteMetadata: {
     author: 'Diogenes Teufelsdröckh',
     description: 'Transcendentalist musings on the future of robots',
     siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
     title: 'Teufelsdröckh laboratory',
-    // List of PubMed IDs to include on the publication page. If you do not
-    // want this page, remove all entries from the array but do not delete
-    // the array itself.
+    // List of link buttons to include on the landing image. Delete this field
+    // and/or all entires if you do not want these links.
+    // options: 'contact', 'opportunities', 'people', 'publications', 'research'
+    primaryLinks: [
+      'research',
+      'opportunities',
+    ],
+    // List of PubMed IDs to include on the publication page. Delete this field
+    // and/or all entires if you do not want the publication page.
     publications: [
       31217594,
       30554943,
@@ -15,13 +22,12 @@ module.exports = {
     ],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
-    // it will not be shown. Delete all array items, except for the 'Dummy',
-    // to disable footer links.
+    // it will not be shown. Delete this field and/or all entires to disable
+    // footer links.
     footerLinks: [
       { text: 'GitHub', link: 'https://github.com/knightjdr' },
       { text: 'Google Scholar', link: 'https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ' },
       { text: 'LinkedIn', link: 'https://www.linkedin.com/in/james-knight-174996156' },
-      { text: 'Dummy', link: '' }, // Do not remove.
     ],
   },
   plugins: [

@@ -11,16 +11,20 @@ const LandingContainer = () => {
           siteMetadata {
             author
             description
+            primaryLinks
           }
         }
       }
     `,
   );
 
+  const { author, description, primaryLinks } = site.siteMetadata;
+
   return (
     <Landing
-      author={site.siteMetadata.author}
-      description={site.siteMetadata.description}
+      author={author}
+      description={description}
+      links={primaryLinks}
     />
   );
 };

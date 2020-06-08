@@ -1,10 +1,5 @@
 # gatsby-starter-scientist
 
-## Example
-
-The example scientist used in this starter is a fictional character from Thomas Carlyle's
-<i>Sartor Resartus</i>.
-
 ## Customization
 
 ### gatsby-config.js

@@ -11,7 +11,10 @@ import './contact.css';
 const Contact = ({
   html,
 }) => (
-  <section className="contact">
+  <section
+    className="contact"
+    id="contact"
+  >
     <h2>
       <FontAwesomeIcon icon={faMailBulk} />
       Contact
