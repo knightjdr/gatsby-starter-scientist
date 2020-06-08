@@ -5,12 +5,14 @@ import Navbar from './navbar';
 
 import getMenuState from './get-menu-state';
 import useClickOutside from '../../../utils/hooks/click-outside/use-click-outside';
+import useLinks from './links/use-links';
 
 const NavbarContainer = ({
   location,
 }) => {
   const [menuState, toggleMenu] = useState(getMenuState());
   const navRef = useRef();
+  const links = useLinks();
 
   const closeMenu = () => {
     if (menuState.isOpen) {
@@ -27,6 +29,7 @@ const NavbarContainer = ({
   return (
     <Navbar
       handleClick={handleClick}
+      links={links}
       location={location}
       ref={navRef}
       transform={menuState.transform}

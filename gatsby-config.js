@@ -4,6 +4,15 @@ module.exports = {
     description: 'Transcendentalist musings on the future of robots',
     siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
     title: 'Teufelsdröckh laboratory',
+    // List of PubMed IDs to include on the publication page. If you do not
+    // want this page, remove all entries from the array but do not delete
+    // the array itself.
+    publications: [
+      31217594,
+      30554943,
+      29395067,
+      24255178,
+    ],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
     // it will not be shown. Delete all array items, except for the 'Dummy',
