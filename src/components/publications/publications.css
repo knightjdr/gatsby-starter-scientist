@@ -12,6 +12,7 @@
   margin-bottom: 0;
 }
 .publications header svg {
+  color: var(--color-primary);
   margin-left: 1rem;
 }
 .publications section {
