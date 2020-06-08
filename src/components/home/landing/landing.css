@@ -39,3 +39,9 @@
     min-height: auto;
   }
 }
+@media (max-width: 500px) {
+  .home__landing > div {
+    height: auto;
+    min-height: auto;
+  }
+}

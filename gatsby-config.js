@@ -17,7 +17,7 @@ module.exports = {
     // (not just the ones here). If either the link or text is missing,
     // it will not be shown. Delete all array items, except for the 'Dummy',
     // to disable footer links.
-    links: [
+    footerLinks: [
       { text: 'GitHub', link: 'https://github.com/knightjdr' },
       { text: 'Google Scholar', link: 'https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ' },
       { text: 'LinkedIn', link: 'https://www.linkedin.com/in/james-knight-174996156' },

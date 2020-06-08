@@ -1,0 +1,61 @@
+.people {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.people header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.people header h1 {
+  margin-bottom: 0;
+}
+.people header svg {
+  color: var(--color-primary);
+  margin-left: 1rem;
+}
+.people section {
+  margin: 2rem 0;
+  max-width: 960px;
+  width: calc(100vw - 3rem);
+}
+
+.people__list {
+  list-style: none;
+  margin-left: 0;
+}
+.people__list li {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5rem;
+}
+.people__list li h2,
+.people__list li h3 {
+  margin-bottom: 1rem;
+}
+.person__list-email {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.people__list-image {
+  border: 2px solid var(--color-primary);
+  border-radius: 0.3rem;
+  margin-right: 1.5rem;
+  min-width: 300px;
+  width: 300px;
+}
+
+@media (max-width: 750px) {
+  .people__list li {
+    align-items: center;
+    flex-direction: column;
+  }
+  .people__list-image {
+    margin-bottom: 1.2rem;
+    margin-right: 0;
+    max-width: 300px;
+    min-width: auto;
+    width: 100%;
+  }
+}

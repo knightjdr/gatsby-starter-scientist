@@ -12,7 +12,7 @@ const FooterContainer = () => {
         site {
           siteMetadata {
             author
-            links{
+            footerLinks{
               link
               text
             }
@@ -22,9 +22,9 @@ const FooterContainer = () => {
     `,
   );
 
-  const { author, links } = site.siteMetadata;
+  const { author, footerLinks } = site.siteMetadata;
 
-  const filteredLinks = filterLinks(links);
+  const filteredLinks = filterLinks(footerLinks);
 
   return (
     <Footer

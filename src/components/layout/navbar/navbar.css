@@ -84,10 +84,14 @@
 }
 .nav__menu-links button {
   margin-left: auto;
+  margin-top: 1rem;
 }
 
 .nav__right * {
   margin: 0 0.6rem;
+}
+.nav__right button {
+  margin-left: 1.2rem;
 }
 
 @media (max-width: 799px) {
