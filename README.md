@@ -64,5 +64,5 @@ Vector cartoons are by [Lukasz Adam](https://lukaszadam.com/)
 Icons are from the free repository at [FontAwesome](https://fontawesome.com/)
 Hero image is courtesy of [Ramón Salinero on Unsplash](https://unsplash.com/photos/vEE00Hx5d0Q).
 Wooden robot image is courtesy of [Kaboompics.com from Pexels](https://www.pexels.com/photo/wooden-robot-6069/)
-Sky image is courtesy of [Fey Marin on Unsplash](https://unsplash.com/photos/UFp0Y3qfFWM)
+Hourglass image is courtesy of [Aron Visuals on Unsplash](https://unsplash.com/photos/BXOXnQ26B7o)
 Robot army image is courtesy of [Mina FC on Unsplash](https://unsplash.com/photos/3QKsG0fDrC8)
