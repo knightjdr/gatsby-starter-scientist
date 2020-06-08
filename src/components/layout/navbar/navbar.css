@@ -72,6 +72,12 @@
 .nav__right a:hover {
   color: var(--color-primary);
 }
+.nav__menu a:link svg,
+.nav__menu a:visited svg,
+.nav__right a:link svg,
+.nav__right a:visited svg {
+  color: var(--color-primary);
+}
 
 .nav__menu-links a {
   margin: 0.3rem 0;
