@@ -60,6 +60,13 @@
   display: inline-block;
   margin: 0.2rem 0.75rem;
 }
+.footer__links li a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+}
 
 @media (max-width: 700px) {
   .footer__links ul {

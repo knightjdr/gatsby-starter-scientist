@@ -10,6 +10,7 @@ const Icon = ({
   isHomePage,
 }) => (
   <Link
+    aria-label="Home"
     className="nav__icon"
     nav
     to="/"

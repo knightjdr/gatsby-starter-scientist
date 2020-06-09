@@ -16,7 +16,7 @@ const ResearchContainer = () => {
               frontmatter {
                 image {
                   childImageSharp {
-                    fluid(quality: 90, maxWidth: 300) {
+                    fluid(quality: 90, maxHeight: 300, maxWidth: 300) {
                       ...GatsbyImageSharpFluid_withWebp
                     }
                   }

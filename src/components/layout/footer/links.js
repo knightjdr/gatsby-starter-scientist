@@ -9,6 +9,7 @@ const Links = ({
 }) => (
   <div className="footer__links">
     <Link
+      aria-label="Home"
       className="footer__icon"
       nav
       to="/"
