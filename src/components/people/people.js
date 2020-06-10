@@ -9,6 +9,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import Link from '../link/link';
 
 import './people.css';
+import Portrait from './portrait';
 
 const People = ({
   markdown,
@@ -25,10 +26,9 @@ const People = ({
         {
           markdown.map((person) => (
             <li key={person.node.frontmatter.name}>
-              <Image
-                alt={person.node.frontmatter.name}
-                className="people__list-image"
-                fluid={person.node.frontmatter.image.childImageSharp.fluid}
+              <Portrait
+                image={person.node.frontmatter.image}
+                name={person.node.frontmatter.name}
               />
               <div>
                 <h2>{person.node.frontmatter.name}</h2>
