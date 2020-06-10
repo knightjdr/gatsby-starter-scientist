@@ -52,7 +52,7 @@
 .people__list-image svg {
   fill: var(--color-primary);
   height: 65%;
-  opacity: 50%;
+  opacity: 0.5;
   width: 65%;
 }
 
