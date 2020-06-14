@@ -1,5 +1,51 @@
 # gatsby-starter-scientist
 
+## Setup
+
+### Prerequisites
+
+* [Node.js](https://nodejs.org/en/download/)
+* [git](https://git-scm.com/downloads)
+* [GitHub account](https://github.com/)
+* code editor, e.g [VS Code](https://code.visualstudio.com/)
+
+### Project creation
+
+1. Fork this project on GitHub by navigating to the project page `https://github.com/knightjdr/gatsby-starter-scientist` and clicking the `Fork` button in the upper right corner.
+
+2. (Optional) Rename the repository from the `Settings` menu. For example to `yourname-lab`.
+
+3. Clone repository from command line. If you changed the repository name in step 2, be sure to update the url. This will create a folder on your machine in the current directory with the project's code.
+```
+git clone https://github.com/[your-user-name]/gatsby-starter-scientist.git
+```
+
+4. Move into project directory and install dependencies.
+```
+cd gatsby-starter-scientist
+npm install
+```
+
+## Development server
+
+`npm run develop` will start a local development server that you can access from `http://localhost:8000`. Any changes you make to project files will be automatically reflected at the development site.
+
+## Deployment
+
+After making changes to your site, you need to build an optimized version and deploy it to the hosting server. The site is hosted by default on GitHub, which is free.
+
+1. Build the site for production
+```
+npm run build
+```
+
+2. Deploy the site. You will be asked for your GitHub credentials.
+```
+npm run deploy
+```
+
+The site can now be accessed at `https://[your-user-name].github.io/gatsby-starter-scientist`. If you changed the repository name, the URL will be adjusted accordingly.
+
 ## Customization
 
 ### gatsby-config.js
@@ -52,6 +98,10 @@ body.dark-mode {
   --color-primary: #ff7A8A;
 }
 ```
+
+## Custom URL
+
+A custom URL that you purchased can be configured for the site by following the instructions at [GitHub - managing-a-custom-domain](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)
 
 ## Credits
 
