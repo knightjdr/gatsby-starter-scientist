@@ -30,6 +30,21 @@ npm install
 
 `npm run develop` will start a local development server that you can access from `http://localhost:8000`. Any changes you make to project files will be automatically reflected at the development site.
 
+Any changes you make will only affect files on your local machine. It is a good idea to sync those changes with GitHub. This can be done from the command line by committing your changes
+
+```
+git add .
+git commit -m "Description of the changes"
+```
+
+And pushing them to GitHub
+
+```
+git push
+```
+
+You can also do this using [GitHub's Desktop client](https://desktop.github.com/).
+
 ## Deployment
 
 After making changes to your site, you need to build an optimized version and deploy it to the hosting server. The site is hosted by default on GitHub, which is free.
