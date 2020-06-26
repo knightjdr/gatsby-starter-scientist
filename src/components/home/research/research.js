@@ -23,13 +23,21 @@ const Research = ({
       {
         markdown.map((research) => (
           <li key={research.node.frontmatter.title}>
-            <h3>{research.node.frontmatter.title}</h3>
+            {
+              research.node.frontmatter.title
+              && <h3>{research.node.frontmatter.title}</h3>
+            }
             <div>
-              <Image
-                alt={research.node.frontmatter.title}
-                className="research__list-image"
-                fluid={research.node.frontmatter.image.childImageSharp.fluid}
-              />
+              {
+                research.node.frontmatter.image
+                && (
+                  <Image
+                    alt={research.node.frontmatter.title}
+                    className="research__list-image"
+                    fluid={research.node.frontmatter.image.childImageSharp.fluid}
+                  />
+                )
+              }
               <div dangerouslySetInnerHTML={{ __html: research.node.html }} />
             </div>
           </li>
