@@ -7,19 +7,15 @@ import React from 'react';
 import './about.css';
 
 const About = ({
-  author,
   html,
   image,
+  title,
 }) => (
   <section className="about">
-    <h2>
-      About
-      {' '}
-      {author}
-    </h2>
+    <h2>{title}</h2>
     <div className="about__inner">
       <Image
-        alt={`Portrait of ${author}`}
+        alt={title}
         className="about__portrait"
         fluid={image}
       />
@@ -29,9 +25,9 @@ const About = ({
 );
 
 About.propTypes = {
-  author: PropTypes.string.isRequired,
   html: PropTypes.node.isRequired,
   image: PropTypes.shape({}).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default About;

@@ -1,4 +1,5 @@
 ---
+title: About Diogenes Teufelsdröckh
 portrait: ../images/portrait.png
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

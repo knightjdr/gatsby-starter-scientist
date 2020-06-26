@@ -17,11 +17,7 @@ const AboutContainer = () => {
                 }
               }
             }
-          }
-        }
-        site {
-          siteMetadata {
-            author
+            title
           }
         }
       }
@@ -29,11 +25,15 @@ const AboutContainer = () => {
   );
 
   return (
-    <About
-      author={query.site.siteMetadata.author}
-      html={query.markdown.html}
-      image={query.markdown.frontmatter.portrait.childImageSharp.fluid}
-    />
+    query.markdown
+      ? (
+        <About
+          html={query.markdown.html}
+          image={query.markdown.frontmatter.portrait.childImageSharp.fluid}
+          title={query.markdown.frontmatter.title}
+        />
+      )
+      : null
   );
 };
 
