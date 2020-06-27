@@ -1,6 +1,5 @@
 /* eslint-disable react/no-danger */
 
-import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,7 +31,12 @@ const People = ({
               />
               <div>
                 <h2>{person.node.frontmatter.name}</h2>
-                <h3>{person.node.frontmatter.title}</h3>
+                {
+                  person.node.frontmatter.title
+                  && (
+                    <h3>{person.node.frontmatter.title}</h3>
+                  )
+                }
                 {
                   person.node.frontmatter.email
                   && (
