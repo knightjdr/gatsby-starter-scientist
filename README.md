@@ -28,7 +28,7 @@ npm install
 
 ## Development server
 
-`npm run develop` will start a local development server that you can access from `http://localhost:8000`. Any changes you make to project files will be automatically reflected at the development site.
+`npm run develop` will start a local development server that you can access from `http://localhost:8000`. Any changes you make to project files will be automatically reflected in your browser.
 
 Any changes you make will only affect files on your local machine. It is a good idea to sync those changes with GitHub. This can be done from the command line by committing your changes
 
@@ -65,44 +65,77 @@ The site can now be accessed at `https://[your-user-name].github.io/gatsby-start
 
 ### gatsby-config.js
 
-### background image
+Basic configuration for the site is found in the `siteMetadata` object in this file. The `author` and `description` fields are used to construct the text on the landing image. Update the `siteUrl` to the site's final address. The `title` field is displayed in browser tabs and search results as the title of the site. The other `siteMetadata` fields have comments to explain their purpose.
 
-The background image on the homepage can be changed by replacing the image `src/images/hero.png`.
-Make sure the image is large to ensure it will look good on large 4K monitors. The image
-in this starter is 5184 × 3456 pixels. The image has to be a `png`, so convert from other formats
-if needed.
+If your site will have a path prefix, for example `https://mysite.org/path-prefix`, be sure to add the prefix to the `pathPrefix` field in this file. If it will not have a prefix, for example `https://mysite.org`, delete this field.
+
+Do not change any of the other fields in this file.
+
+### background/landing image
+
+The background image on the homepage can be changed by replacing the image `src/images/hero.png`. Make sure the image is big to ensure it will look good on large 4K monitors. The image in this starter is 5184 × 3456 pixels. The image has to be a `png`, so convert from other formats if needed.
+
+It should be dark so that text will have sufficient contrast (a filter will be automatically applied to darken it further, so simply avoiding light images should be fine). You can find royalty free images at [unsplash.com](https://unsplash.com) and [pexels.com](https://www.pexels.com).
+
+### General notes about text
+
+The text for many of the sections described below is located in `src/markdown`. You can enter plain text as you'd like it to appear on the site or add links and other html elements using markdown styling. For example, you can specify a linkg with `[link text](https://link-to-whatever.com)` See [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for details.
 
 ### About section
 
+The title, text and image in the `About` section can be customized in the markdown file `src/markdown/about.md`. The image for this section should be placed in the `src/images` folder and its path specified as `../images/[your-picture.png]`. The image should be square and at least 1050 x 1050px and either PNG or JPG. The image will be automatically converted to a circle.
+
+This section is optional, as is the section title and image. Delete or rename the `about.md` file if you do not want this section or delete the title and/or image fields if you do not want them.
+
 ### Research section
+
+The research sections are declared in the `src/markdown/research` folder. You should create one file for each section with an optional title and image. You must specify the order of eacg sections in its corresponding file.
+
+The images for each section should be placed in the `src/images/reaserch` folder and its path specified as `../../images/research/[your-picture.png]`. The image should be square and at least 900 x 900px and either PNG or JPG.
+
+This section is optional, as is the section title and image. Delete all files in this folder if you do not want this section or delete the title and/or image fields if you do not want them.
 
 ### Opportunities section
 
+The text in this section can be customized in the markdown file `src/markdown/opportunities.md`.
+
+This section is optional. Delete or rename the `opportunities.md` file if you do not want this section.
+
 ### Contact section
+
+The text in this section can be customized in the markdown file `src/markdown/contact.md`.
+
+This section is optional. Delete or rename the `contact.md` file if you do not want this section.
 
 ### footer
 
+Links in the footer are declared in the `gatsby-config.js` file. You can include any links you like.
+
+### People page
+
+The people page is built from markdown files in `src/markdown/people` and images in `src/images/people`. Each person in the lab should have his/her own file in the markdown folder. The person's name and order of appearance are required, while the e-mail, image and title fields are optional.
+
+This page is optional. Delete all files in this folder if you do not want this page. This will also remove the `People` link from the navigation bar.
+
+### Publications page
+
+Publications for this page are automatically retrieved from PubMed via PMIDs specified in the `gatsby-config.js` file. The will be ordered by publication date.
+
+The IDs should be placed in the `publications` field in the `siteMetadata` object. This page is optional. Delete all links from the array or delete the field to remove the page. This will also remove the `Publications` link from the navigation bar.
+
 ### favicon
 
-The favourite icon (favicon) is used in a few places. Most notably it is the small icon present
-in the browser tab and located next to the website title on bookmarks.
+The favourite icon (favicon) is used in a few places. Most notably it is the small icon present in the browser tab and located next to the website title on bookmarks.
 
-It can be changed by replacing the image `src/images/favicon.png`. It should be a square image
-512x512px in `png` format. To be consistent with the style of the current icon, create a background
-circle with the hex colour `#ffffff` and give the foreground image the colour `#3d8183`.
+It can be changed by replacing the image `src/images/favicon.png`. It should be a square image 512x512px in `png` format. To be consistent with the style of the current icon, create a background circle with the hex colour `#ffffff` and give the foreground image the colour `#3d8183`.
 
 ### logo
 
-The site logo is located in the top left of the navigation bar and can be changed by replacing the
-image `src/images/logo.inline.svg`. It should be an svg to allow the site to color the image based
-on the theme (light/dark) and mouse state (hover or focus).
+The site logo is located in the top left of the navigation bar and can be changed by replacing the image `src/images/logo.inline.svg`. It should be an svg to allow the site to colour the image based on the theme (light/dark) and mouse state (hover or focus).
 
 ### theme
 
-The colour theme can be changed by editing `src/components/layout/layout.css`. You should only edit
-the `color-primary` variables and ensure the resulting selections have sufficient contrast with the
-background colour in both the light and dark modes. You can use a site like
-[contrast finder](https://app.contrast-finder.org/?lang=en) to test the contrast of your theme.
+The colour theme can be changed by editing `src/components/layout/layout.css`. You should only edit the `color-primary` variables and ensure the resulting selections have sufficient contrast with the background colour in both the light and dark modes. You can use a site like [contrast finder](https://app.contrast-finder.org/?lang=en) to test the contrast of your theme.
 ```
 body.light-mode {
   --color-background: #fff;
@@ -117,6 +150,10 @@ body.dark-mode {
 ## Custom URL
 
 A custom URL that you purchased can be configured for the site by following the instructions at [GitHub - managing-a-custom-domain](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)
+
+## Troubleshooting
+
+If you run into issues with images not displaying correctly in the development server, try running the command `npm run clean` and restarting the development server.
 
 ## Credits
 
