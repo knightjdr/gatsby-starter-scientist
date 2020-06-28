@@ -1,5 +1,9 @@
 # gatsby-starter-scientist
 
+This is a website template built with Gatsby for a typical scientist or laboratory profile/portfolio site.
+
+[Demo](https://knightjdr.github.io/gatsby-start-scientist)
+
 ## Setup
 
 ### Prerequisites
@@ -71,7 +75,7 @@ If your site will have a path prefix, for example `https://mysite.org/path-prefi
 
 Do not change any of the other fields in this file.
 
-### background/landing image
+### Background/landing image
 
 The background image on the homepage can be changed by replacing the image `src/images/hero.png`. Make sure the image is big to ensure it will look good on large 4K monitors. The image in this starter is 5184 × 3456 pixels. The image has to be a `png`, so convert from other formats if needed.
 
@@ -79,35 +83,35 @@ It should be dark so that text will have sufficient contrast (a filter will be a
 
 ### General notes about text
 
-The text for many of the sections described below is located in `src/markdown`. You can enter plain text as you'd like it to appear on the site or add links and other html elements using markdown styling. For example, you can specify a linkg with `[link text](https://link-to-whatever.com)` See [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for details.
+The text for many of the sections described below is located in `src/markdown`. You can enter plain text as you'd like it to appear on the site or add links and other html elements using markdown styling. For example, you can specify a linkg with `[link text](https://link-to-whatever.com)`. See [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for details.
 
 ### About section
 
-The title, text and image in the `About` section can be customized in the markdown file `src/markdown/about.md`. The image for this section should be placed in the `src/images` folder and its path specified as `../images/[your-picture.png]`. The image should be square and at least 1050 x 1050px and either PNG or JPG. The image will be automatically converted to a circle.
+The title, text and image in the `About` section can be customized in the markdown file `src/markdown/about.md`. The image for this section should be placed in the `src/images` folder and its path specified as `../images/[your-picture.png]`. The image should be square and at least 1050 x 1050 pixels and either PNG or JPG. The image will be automatically converted to a circle.
 
 This section is optional, as is the section title and image. Delete or rename the `about.md` file if you do not want this section or delete the title and/or image fields if you do not want them.
 
-### Research section
+### Research subsection
 
-The research sections are declared in the `src/markdown/research` folder. You should create one file for each section with an optional title and image. You must specify the order of eacg sections in its corresponding file.
+The research subsections are declared in the `src/markdown/research` folder. You should create one file for each subsection with an optional title and image. You must specify the order of each subsection in its corresponding file.
 
-The images for each section should be placed in the `src/images/reaserch` folder and its path specified as `../../images/research/[your-picture.png]`. The image should be square and at least 900 x 900px and either PNG or JPG.
+The images for each subsection should be placed in the `src/images/reaserch` folder and its path specified as `../../images/research/[your-picture.png]`. The image should be square and at least 900 x 900 pi and either PNG or JPG.
 
-This section is optional, as is the section title and image. Delete all files in this folder if you do not want this section or delete the title and/or image fields if you do not want them.
+This section is optional, as are the subsection titles and images. Delete all files in this folder if you do not want this section or delete the title and/or image fields if you do not want them.
 
 ### Opportunities section
 
 The text in this section can be customized in the markdown file `src/markdown/opportunities.md`.
 
-This section is optional. Delete or rename the `opportunities.md` file if you do not want this section.
+This section is optional. Delete or rename the `opportunities.md` file if you do not want it.
 
 ### Contact section
 
 The text in this section can be customized in the markdown file `src/markdown/contact.md`.
 
-This section is optional. Delete or rename the `contact.md` file if you do not want this section.
+This section is optional. Delete or rename the `contact.md` file if you do not want it.
 
-### footer
+### Footer
 
 Links in the footer are declared in the `gatsby-config.js` file. You can include any links you like.
 
@@ -115,25 +119,27 @@ Links in the footer are declared in the `gatsby-config.js` file. You can include
 
 The people page is built from markdown files in `src/markdown/people` and images in `src/images/people`. Each person in the lab should have his/her own file in the markdown folder. The person's name and order of appearance are required, while the e-mail, image and title fields are optional.
 
+Images should be square and at least 900 x 900 pixels and either PNG or JPG.
+
 This page is optional. Delete all files in this folder if you do not want this page. This will also remove the `People` link from the navigation bar.
 
 ### Publications page
 
-Publications for this page are automatically retrieved from PubMed via PMIDs specified in the `gatsby-config.js` file. The will be ordered by publication date.
+Publications for this page are automatically retrieved from PubMed via PMIDs specified in the `gatsby-config.js` file. They will be ordered by publication date. The IDs should be placed in the `publications` field in the `siteMetadata` object.
 
-The IDs should be placed in the `publications` field in the `siteMetadata` object. This page is optional. Delete all links from the array or delete the field to remove the page. This will also remove the `Publications` link from the navigation bar.
+This page is optional. Delete all links from the array or delete the field to remove the page. This will also remove the `Publications` link from the navigation bar.
 
-### favicon
+### Favicon
 
 The favourite icon (favicon) is used in a few places. Most notably it is the small icon present in the browser tab and located next to the website title on bookmarks.
 
-It can be changed by replacing the image `src/images/favicon.png`. It should be a square image 512x512px in `png` format. To be consistent with the style of the current icon, create a background circle with the hex colour `#ffffff` and give the foreground image the colour `#3d8183`.
+It can be changed by replacing the image `src/images/favicon.png`. It should be a square image 512 x 512 pixels in `png` format. To be consistent with the style of the current icon, create a background circle with the hex colour `#ffffff` and give the foreground image the colour `#3d8183`.
 
-### logo
+### Logo
 
 The site logo is located in the top left of the navigation bar and can be changed by replacing the image `src/images/logo.inline.svg`. It should be an svg to allow the site to colour the image based on the theme (light/dark) and mouse state (hover or focus).
 
-### theme
+### Theme
 
 The colour theme can be changed by editing `src/components/layout/layout.css`. You should only edit the `color-primary` variables and ensure the resulting selections have sufficient contrast with the background colour in both the light and dark modes. You can use a site like [contrast finder](https://app.contrast-finder.org/?lang=en) to test the contrast of your theme.
 ```
@@ -157,9 +163,9 @@ If you run into issues with images not displaying correctly in the development s
 
 ## Credits
 
-Vector cartoons are by [Lukasz Adam](https://lukaszadam.com/)
-Icons are from the free repository at [FontAwesome](https://fontawesome.com/)
-Hero image is courtesy of [Ramón Salinero on Unsplash](https://unsplash.com/photos/vEE00Hx5d0Q).
-Wooden robot image is courtesy of [Kaboompics.com from Pexels](https://www.pexels.com/photo/wooden-robot-6069/)
-Hourglass image is courtesy of [Aron Visuals on Unsplash](https://unsplash.com/photos/BXOXnQ26B7o)
-Robot army image is courtesy of [Mina FC on Unsplash](https://unsplash.com/photos/3QKsG0fDrC8)
+* Vector cartoons are by [Lukasz Adam](https://lukaszadam.com/)
+* Icons are from the free repository at [FontAwesome](https://fontawesome.com/)
+* Hero image is courtesy of [Ramón Salinero on Unsplash](https://unsplash.com/photos/vEE00Hx5d0Q).
+* Wooden robot image is courtesy of [Kaboompics.com from Pexels](https://www.pexels.com/photo/wooden-robot-6069/)
+* Hourglass image is courtesy of [Aron Visuals on Unsplash](https://unsplash.com/photos/BXOXnQ26B7o)
+* Robot army image is courtesy of [Mina FC on Unsplash](https://unsplash.com/photos/3QKsG0fDrC8)
