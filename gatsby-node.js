@@ -14,6 +14,23 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       interfaces: ['Node'],
     }),
     schema.buildObjectType({
+      name: 'Frontmatter',
+      fields: {
+        email: 'String',
+        name: 'String',
+        order: 'Int',
+        title: 'String',
+      },
+      interfaces: ['Node'],
+    }),
+    schema.buildObjectType({
+      name: 'MarkdownRemark',
+      fields: {
+        frontmatter: 'Frontmatter',
+      },
+      interfaces: ['Node'],
+    }),
+    schema.buildObjectType({
       name: 'Publication',
       fields: {
         authors: '[String]',

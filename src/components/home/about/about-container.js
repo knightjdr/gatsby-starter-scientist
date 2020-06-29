@@ -10,7 +10,7 @@ const AboutContainer = () => {
         markdown: markdownRemark(fileAbsolutePath: { regex: "/about.md/" }) {
           html
           frontmatter {
-            portrait {
+            image {
               childImageSharp {
                 fluid(quality: 90, maxWidth: 350) {
                   ...GatsbyImageSharpFluid_withWebp
@@ -29,7 +29,7 @@ const AboutContainer = () => {
       ? (
         <About
           html={query.markdown.html}
-          image={query.markdown.frontmatter.portrait.childImageSharp.fluid}
+          image={query.markdown.frontmatter.image.childImageSharp.fluid}
           title={query.markdown.frontmatter.title}
         />
       )

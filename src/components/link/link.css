@@ -52,7 +52,7 @@ a.link_button:active {
   color: var(--color-font);
   text-decoration: none;
 }
-a.link_button.link_nav:visited {
+a.link_button.link_nav:visited:not(:hover) {
   color: var(--color-font-contrast);
 }
 
