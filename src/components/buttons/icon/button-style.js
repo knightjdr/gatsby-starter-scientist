@@ -9,7 +9,6 @@ const Button = styled(DefaultButton)`
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  color: var(--color-primary);
   display: flex;
   font-size: 1em;
   justify-content: center;
