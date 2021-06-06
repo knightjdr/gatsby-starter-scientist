@@ -12,9 +12,7 @@ const AboutContainer = () => {
           frontmatter {
             image {
               childImageSharp {
-                fluid(quality: 90, maxWidth: 350) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(quality: 90, width: 350)
               }
             }
             title
@@ -29,7 +27,7 @@ const AboutContainer = () => {
       ? (
         <About
           html={query.markdown.html}
-          image={query.markdown.frontmatter.image.childImageSharp.fluid}
+          image={query.markdown.frontmatter.image.childImageSharp.gatsbyImageData}
           title={query.markdown.frontmatter.title}
         />
       )

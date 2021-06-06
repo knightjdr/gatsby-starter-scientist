@@ -16,9 +16,7 @@ const ResearchContainer = () => {
               frontmatter {
                 image {
                   childImageSharp {
-                    fluid(quality: 90, maxHeight: 300, maxWidth: 300) {
-                      ...GatsbyImageSharpFluid_withWebp
-                    }
+                    gatsbyImageData(quality: 90, height: 300, width: 300)
                   }
                 }
                 title

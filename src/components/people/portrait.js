@@ -1,4 +1,4 @@
-import Image from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -10,10 +10,10 @@ const Portrait = ({
 }) => (
   image
     ? (
-      <Image
+      <GatsbyImage
         alt={name}
         className="people__list-image"
-        fluid={image.childImageSharp.fluid}
+        image={image.childImageSharp.gatsbyImageData}
       />
     )
     : (
@@ -28,7 +28,11 @@ Portrait.defaultProps = {
 };
 
 Portrait.propTypes = {
-  image: PropTypes.shape({}),
+  image: PropTypes.shape({
+    childImageSharp: PropTypes.shape({
+      gatsbyImageData: PropTypes.shape({}),
+    }),
+  }),
   name: PropTypes.string.isRequired,
 };
 

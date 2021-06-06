@@ -1,8 +1,8 @@
 /* eslint-disable react/no-danger */
 
-import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import './about.css';
 
@@ -14,10 +14,10 @@ const About = ({
   <section className="about">
     <h2>{title}</h2>
     <div className="about__inner">
-      <Image
+      <GatsbyImage
         alt={title}
         className="about__portrait"
-        fluid={image}
+        image={image}
       />
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>

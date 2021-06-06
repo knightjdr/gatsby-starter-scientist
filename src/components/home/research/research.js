@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 
-import Image from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,10 +31,10 @@ const Research = ({
               {
                 research.node.frontmatter.image
                 && (
-                  <Image
+                  <GatsbyImage
                     alt={research.node.frontmatter.title}
                     className="research__list-image"
-                    fluid={research.node.frontmatter.image.childImageSharp.fluid}
+                    image={research.node.frontmatter.image.childImageSharp.gatsbyImageData}
                   />
                 )
               }
