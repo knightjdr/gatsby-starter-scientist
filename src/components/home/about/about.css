@@ -15,6 +15,10 @@
   width: 350px;
 }
 
+.about__portrait img {
+  border-radius: 50%;
+}
+
 @media (max-width: 700px) {
   .about__inner {
     align-items: center;
