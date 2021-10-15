@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-people-index-js","path":"/people/","result":{"pageContext":{}},"staticQueryHashes":["1242990418","1271460761","1440116640","4123507481","536276349"]}
+{
+    "componentChunkName": "component---src-pages-people-index-js",
+    "path": "/people/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["1271460761","1440116640","1805795682","4123507481","536276349"]}
