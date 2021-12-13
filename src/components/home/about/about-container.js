@@ -12,7 +12,11 @@ const AboutContainer = () => {
           frontmatter {
             image {
               childImageSharp {
-                gatsbyImageData(quality: 90, width: 350)
+                gatsbyImageData(
+                  quality: 70,
+                  placeholder: BLURRED,
+                  width: 350,
+                )
               }
             }
             title

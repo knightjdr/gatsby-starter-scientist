@@ -1,6 +1,6 @@
-import BackgroundImage from 'gatsby-background-image';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { BgImage } from 'gbimage-bridge';
 
 const Hero = ({
   children,
@@ -13,12 +13,12 @@ const Hero = ({
   ].reverse();
 
   return (
-    <BackgroundImage
-      fluid={backgroundFluidImageStack}
+    <BgImage
+      image={backgroundFluidImageStack}
       {...props}
     >
       {children}
-    </BackgroundImage>
+    </BgImage>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Hero from './hero';
@@ -11,18 +12,22 @@ const HeroContainer = ({
       query {
         hero: file(relativePath: { eq: "hero.png" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(
+              quality: 70,
+              placeholder: BLURRED,
+              width: 1920,
+            )
           }
         }
       }
     `,
   );
 
+  const image = getImage(query.hero);
+
   return (
     <Hero
-      image={query.hero.childImageSharp.fluid}
+      image={image}
       {...props}
     />
   );

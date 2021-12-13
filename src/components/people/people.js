@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 
 import Link from '../link/link';
+import Portrait from './portrait';
 
 import './people.css';
-import Portrait from './portrait';
 
 const People = ({
   markdown,

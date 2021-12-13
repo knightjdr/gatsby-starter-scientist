@@ -16,7 +16,12 @@ const ResearchContainer = () => {
               frontmatter {
                 image {
                   childImageSharp {
-                    gatsbyImageData(quality: 90, height: 300, width: 300)
+                    gatsbyImageData(
+                      quality: 70,
+                      placeholder: BLURRED,
+                      height: 300,
+                      width: 300,
+                    )
                   }
                 }
                 title
