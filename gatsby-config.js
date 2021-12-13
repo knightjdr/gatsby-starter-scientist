@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/gatsby-starter-scientist',
+  // pathPrefix: '/gatsby-starter-scientist',
   siteMetadata: {
     author: 'Diogenes Teufelsdröckh',
     description: 'Transcendentalist musings on the future of robots',
