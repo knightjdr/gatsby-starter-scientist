@@ -2,7 +2,7 @@
 
 This is a website template built with Gatsby for a typical scientist or laboratory profile/portfolio site.
 
-[Demo](https://knightjdr.github.io/gatsby-starter-scientist)
+[Demo](https://gatsbystarterscientistdemo.gatsbyjs.io)
 
 ## Setup
 
@@ -71,7 +71,7 @@ The site can now be accessed at `https://[your-user-name].github.io/gatsby-start
 
 Basic configuration for the site is found in the `siteMetadata` object in this file. The `author` and `description` fields are used to construct the text on the landing image. Update the `siteUrl` to the site's final address. The `title` field is displayed in browser tabs and search results as the title of the site. The other `siteMetadata` fields have comments to explain their purpose.
 
-If your site will have a path prefix, for example `https://mysite.org/path-prefix`, be sure to uncomment the `pathPrefix` field in this file and add in the correct prefix. If it will not have a prefix, for example `https://mysite.org`, delete this field.
+If the starting page for your site will have a path prefix, for example `https://mysite.org/path-prefix`, be sure to uncomment the `pathPrefix` field in this file and add in the correct prefix. If it will not have a prefix, for example `https://mysite.org`, delete this field. If you are hosting on Github as described above, your site will have a path prefix which is the name of the repository (`gatsby-starter-scientist` if you have not changed the name.)
 
 Do not change any of the other fields in this file.
 
