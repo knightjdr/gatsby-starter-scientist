@@ -17,7 +17,7 @@ const People = ({
     <section>
       <header>
         <h1>
-          People
+        People
         </h1>
         <FontAwesomeIcon icon={faUsers} size="2x" />
       </header>

@@ -18,10 +18,8 @@ const Footer = ({
       ©
       {' '}
       {author}
-      ,
       {' '}
       {new Date().getFullYear()}
-      .
     </small>
   </footer>
 );

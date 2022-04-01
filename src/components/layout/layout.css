@@ -10,13 +10,13 @@ body,
 body.light-mode {
   --color-background: #fff;
   --color-font: #333;
-  --color-font-contrast: #110202;
+  --color-font-contrast: #fff;
   --color-font-dark: #333;
   --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);
   --color-link: #346acc;
   --color-link-visited: #551a8b;
-  --color-primary: #3d8183;
+  --color-primary: #988675;
   background-color: var(--color-background);
   color: var(--color-font);
 }
@@ -29,7 +29,7 @@ body.dark-mode {
   --color-input-focus: rgba(59, 153, 252, .7);
   --color-link: #5b95ff;
   --color-link-visited: #9675ff;
-  --color-primary: #ff7A8A;
+  --color-primary: #BE93D4;
   background-color: var(--color-background);
   color: var(--color-font);
 }

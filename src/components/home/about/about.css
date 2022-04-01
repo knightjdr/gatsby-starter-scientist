@@ -1,18 +1,19 @@
 .about h2 {
   font-family: var(--font-title);
   margin-bottom: 3rem;
-  text-align: center;
-  width: 100%;
+  text-align: right;
+  width: 350px;
 }
 
 .about__portrait {
-  border-radius: 50%;
+  border-radius: 100%;
   float: left;
-  height: 350px;
-  margin-bottom: 1.5rem;
-  margin-right: 3rem;
-  shape-outside: circle();
-  width: 350px;
+  height: 250px;
+  width: 250px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  shape-outside: square();
 }
 
 .about__portrait img {
@@ -30,8 +31,8 @@
     float: unset;
     height: auto;
     margin-right: 0;
-    max-height: 350px;
-    max-width: 350px;
+    max-height: 200px;
+    max-width: 200px;
     shape-outside: none;
     width: 100%;
   }

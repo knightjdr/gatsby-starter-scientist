@@ -1,6 +1,5 @@
-Diogenes Teufelsdröckh, Professor of "Things in General" \
-[diogenes@wnw.edu](mailto:diogenes@weissnichtwo.edu)
+EeShan (Eesh) Bhatt \
+<sup>pronounced ee-SHAWN (EEsh), he/him/his</sup>\
+[ebhatt (at) whoi (dot) edu](mailto:ebhatt@whoi.edu)
 
-Weissnichtwo University\
-Weissnichtwo, Germany\
-tel: (xxx) xxxx-xxxx
+@eeshanbot on [Github](https://www.github.com/eeshanbot) + [Twitter](https://www.twitter.com/eeshanbot)

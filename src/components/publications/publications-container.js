@@ -3,35 +3,33 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Publications from './publications';
 
-import sortArticles from './sort-articles';
+import sortMarkdown from '../../utils/sort-markdown';
 
 const PublicationsContainer = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        publications(list: {elemMatch: {title: {regex: "/.*/"}}}) {
-          list{
-            authors
-            journal
-            issue
-            pages
-            pmid
-            title
-            volume
-            year
+        markdown: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/publications/" } }) {
+          edges {
+            node {
+              html
+              frontmatter {
+              title
+              order
+              }
+            }
           }
         }
       }
     `,
   );
 
-  const publicationsByYear = query.publications && query.publications.list.length > 0
-    ? sortArticles(query.publications.list)
-    : null;
+  const markdown = sortMarkdown(query.markdown.edges, ['order', 'title','filter']);
 
   return (
-    publicationsByYear
-    && <Publications publications={publicationsByYear} />
+    markdown.length > 0
+      ? <Publications markdown={markdown} />
+      : null
   );
 };
 
