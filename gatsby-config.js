@@ -1,33 +1,27 @@
 module.exports = {
   // pathPrefix: '/gatsby-starter-scientist',
   siteMetadata: {
-    author: 'Diogenes Teufelsdröckh',
-    description: 'Transcendentalist musings on the future of robots',
-    siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
-    title: 'Teufelsdröckh laboratory',
+    author: 'EeShan Bhatt',
+    description: 'marine robotics; embedded acoustics; data++',
+    siteUrl: 'https://eeshanbot.github.io',
+    title: 'eeshanbot',
     // List of link buttons to include on the landing image. Delete this field
     // and/or all entires if you do not want these links.
     // options: 'contact', 'opportunities', 'people', 'publications', 'research'
     primaryLinks: [
-      'research',
-      'opportunities',
     ],
     // List of PubMed IDs to include on the publication page. Delete this field
     // and/or all entires if you do not want the publication page.
     publications: [
-      31217594,
-      30554943,
-      29395067,
-      24255178,
+    12345678
     ],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
     // it will not be shown. Delete this field and/or all entires to disable
     // footer links.
     footerLinks: [
-      { text: 'GitHub', link: 'https://github.com/knightjdr' },
-      { text: 'Google Scholar', link: 'https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ' },
-      { text: 'LinkedIn', link: 'https://www.linkedin.com/in/james-knight-174996156' },
+      { text: 'GitHub', link: 'https://github.com/eeshanbot' },
+      { text: 'Google Scholar', link: 'https://scholar.google.com/citations?user=Sp0hNFYAAAAJ&hl=en' },
     ],
   },
   plugins: [
@@ -36,7 +30,36 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-remark',
+    {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      // In your gatsby-transformer-remark plugin array
+      plugins: [{
+        resolve: 'gatsby-remark-emojis',
+        options: {
+          // Deactivate the plugin globally (default: true)
+          active : true,
+          // Add a custom css class
+          class  : 'emoji-icon',
+          // In order to avoid pattern mismatch you can specify
+          // an escape character which will be prepended to the
+          // actual pattern (e.g. `#:poop:`).
+          escapeCharacter : '#', // (default: '')
+          // Select the size (available size: 16, 24, 32, 64)
+          size   : 64,
+          // Add custom styles
+          styles : {
+            display      : 'inline',
+            margin       : '0',
+            'margin-top' : '1px',
+            position     : 'relative',
+            top          : '5px',
+            width        : '25px'
+          }
+        }
+      }]
+    }
+  },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
