@@ -91,5 +91,17 @@ module.exports = {
         minify: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+      id: "GTM-NCWF85V",
+      
+      // Defaults to false meaning GTM will only be loaded in production.
+      includeInDevelopment: false,
+      
+      // Defaults to false
+      enableWebVitalsTracking: true,
+     },
+  },
   ],
 };
