@@ -3,8 +3,8 @@
 This is a website template built with Gatsby for a beautiful and minimal lab portfolio site. Please see the original [Github repo](https://github.com/knightjdr/gatsby-starter-scientist), with instructions on how to make your own, and the [demo](https://gatsbystarterscientistdemo.gatsbyjs.io) here.
 
 ### reminder for setup
-``npm run develop``
-``npm run build``
+``npm run develop`` 
+``npm run build`` 
 ``npm run deploy``
 
 ### open source credits

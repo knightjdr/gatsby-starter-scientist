@@ -10,7 +10,7 @@ order: 1
 _Journal of Acoustical Society of America._
 
 :hourglass_flowing_sand: Bhatt, E., Howard, B., Schmidt, H.
-**An embedded tactical decision aid framework for enviromentally adaptive autonomous underwater vehicle communication and navigation.**
+**An embedded tactical decision aid framework for environmentally adaptive autonomous underwater vehicle communication and navigation.**
 _IEEE Journal of Ocean Engineering._
 
 :mag: Randeni, S., Schneider, T., Bhatt, E., Viquez, O., Schmidt, H.
