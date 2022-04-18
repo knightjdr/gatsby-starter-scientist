@@ -12,7 +12,7 @@ This is a website template built with Gatsby for a beautiful and minimal lab por
 ``npm run deploy``
 
 ### open source credits
-* splash image is courtesy of Lt. Cdr. Dan Goodwin*
+* splash image is courtesy of Lt. Cdr. Dan Goodwin
 * Site home svg logo courtesy of svgrepo
 * favicon courtesy of Freepik on Flaticon
 * icons are from the free repository at [FontAwesome](https://fontawesome.com/)
