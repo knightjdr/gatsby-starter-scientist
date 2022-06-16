@@ -8,6 +8,8 @@ order: 1
 :hourglass_flowing_sand: Bhatt, E., Howard, B., Schmidt, H.
 **An embedded tactical decision aid framework for environmentally adaptive autonomous underwater vehicle communication and navigation.**
 _IEEE Journal of Ocean Engineering._
+2022.
+[10.1109/joe.2022.3159234](https://doi.org/10.1109/joe.2022.3159234)
 
 :mag: Randeni, S., Schneider, T., Bhatt, E., Viquez, O., Schmidt, H.
 **A high-resolution AUV navigation framework with integrated communication and tracking for under-ice deployments.**
