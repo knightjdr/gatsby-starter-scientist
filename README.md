@@ -27,7 +27,7 @@ git clone https://github.com/[your-user-name]/gatsby-starter-scientist.git
 4. Move into project directory and install dependencies.
 ```
 cd gatsby-starter-scientist
-npm install
+npm install --legacy-peer-deps
 ```
 
 ## Development server
