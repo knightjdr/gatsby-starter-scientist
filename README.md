@@ -2,7 +2,7 @@
 
 This is a website template built with Gatsby for a typical scientist or laboratory profile/portfolio site.
 
-[Demo](https://gatsbystarterscientistdemo.gatsbyjs.io)
+[Demo](https://knightjdr.github.io/gatsby-starter-scientist)
 
 ## Setup
 
